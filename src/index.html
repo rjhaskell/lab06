@@ -23,10 +23,10 @@
 
         <label>2nd number:<input type="number" id="num2" ng-model="vm.num2"></label><br><br>
 
-        <!--<button type="button" ng-click="vm.result">SUBMIT</button>-->
+        <button type="button" ng-click="vm.calculate">SUBMIT</button>
         <br>
         <br>
-        <label>Result: {{vm.num1}} {{vm.operator}} {{vm.num2}} = {{vm.result}}</label><br><br>
+        <label>Result: {{vm.num1}} {{vm.operator}} {{vm.num2}} = {{vm.calculate()}}</label><br><br>
 
         
         
@@ -36,7 +36,7 @@
         num2:        {{vm.num2}}<br>
         operator:    {{vm.operator}}<br>
         result:      {{vm.result}}<br>
-        calculate(): {{vm.calulate()}}
+        calculate(): {{vm.calculate()}}
 
     <!-- Third Party Scripts -->
     <script src="lib/angular/angular.min.js"></script>
