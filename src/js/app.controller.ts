@@ -8,21 +8,21 @@ namespace Lab06 {
         public result: number = 0;
 
         
-         public calculate(num1: number, num2: number, operator: string, result: number): number{
-            if(operator === "ADD") {      //Addition calculation
-                return num1 + num2;
+         public calculate(): number{
+            if(this.operator === "ADD") {      //Addition calculation
+                return this.num1 + this.num2;
               
-            };
-            if(operator === "SUB") {//Subtraction calculation
-                return num1 - num2;
+            }
+            else if(this.operator === "SUB") {//Subtraction calculation
+                return this.num1 - this.num2;
             
-            };
-            if(operator === "MUL") {//Multiplication calculation
-                return num1 * num2;
+            }
+            else if(this.operator === "MUL") {//Multiplication calculation
+                return this.num1 * this.num2;
         
-            };
-            if(operator === "DIV") {//Division calculation
-              return num1 / num2;
+            }
+            else if(this.operator === "DIV") {//Division calculation
+              return this.num1 / this.num2;
             
             };
         }
